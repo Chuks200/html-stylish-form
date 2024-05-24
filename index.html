@@ -8,6 +8,22 @@
     <title>Stylish Form</title>
   </head>
   <body>
-
+    <form action="thankYou.html" method="get">
+      <label class="Intro">Say Hello!</label>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required minlength="3" placeholder="Enter your name">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      <label for="services">Choose Services</label>
+      <select id="services" name="services" required>
+          <option value="">Select a Service</option>
+          <option value="web">Software Development</option>
+          <option value="seo">Data Analytics</option>
+          <option value="marketing">Digital Marketing</option>
+      </select>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+      <input type="submit" value="Submit">
+  </form>
   </body>
 </html>
